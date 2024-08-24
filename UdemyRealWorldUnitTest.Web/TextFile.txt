@@ -1,0 +1,1 @@
+﻿Scaffold-DbContext "Data Source=MURATBOLULU;Initial Catalog=UdemyRealWorldUnitTest;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models

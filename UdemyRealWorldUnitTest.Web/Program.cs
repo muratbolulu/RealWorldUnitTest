@@ -1,8 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using UdemyRealWorldUnitTest.Web.Models;
+using UdemyRealWorldUnitTest.Web.Repository;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddDbContext<UdemyRealWorldUnitTestContext>(options => 
+                    options.UseSqlServer("name=ConnectionStrings:SqlServerConnectionString"));
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
