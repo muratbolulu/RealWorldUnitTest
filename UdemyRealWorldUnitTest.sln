@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyRealWorldUnitTest.Web", "UdemyRealWorldUnitTest.Web\UdemyRealWorldUnitTest.Web.csproj", "{989F4ABA-EC2E-4CC7-A4E3-020C2176448F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyRealWorldUnitTest.Test", "UdemyRealWorldUnitTest.Test\UdemyRealWorldUnitTest.Test.csproj", "{C3FBCD2C-AE6A-4E21-B332-8E7AA085C8A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{989F4ABA-EC2E-4CC7-A4E3-020C2176448F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{989F4ABA-EC2E-4CC7-A4E3-020C2176448F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{989F4ABA-EC2E-4CC7-A4E3-020C2176448F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3FBCD2C-AE6A-4E21-B332-8E7AA085C8A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3FBCD2C-AE6A-4E21-B332-8E7AA085C8A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3FBCD2C-AE6A-4E21-B332-8E7AA085C8A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3FBCD2C-AE6A-4E21-B332-8E7AA085C8A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

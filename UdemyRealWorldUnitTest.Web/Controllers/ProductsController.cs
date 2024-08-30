@@ -30,7 +30,7 @@ namespace UdemyRealWorldUnitTest.Web.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                return RedirectToAction("Index");
             }
 
             var product = await _productsRepository.GetById((int)id);
@@ -69,7 +69,7 @@ namespace UdemyRealWorldUnitTest.Web.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                return RedirectToAction("Index");
             }
 
             var product = await _productsRepository.GetById((int)id);
@@ -85,7 +85,7 @@ namespace UdemyRealWorldUnitTest.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Price,Stock,Color")] Product product)
+        public IActionResult Edit(int id, [Bind("Id,Name,Price,Stock,Color")] Product product)
         {
             if (id != product.Id)
             {
@@ -137,10 +137,9 @@ namespace UdemyRealWorldUnitTest.Web.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var product = await _productsRepository.GetById((int)id);
-            if (product != null)
-            {
-                _productsRepository.Delete(product);
-            }
+
+            _productsRepository.Delete(product);
+
             return RedirectToAction(nameof(Index));
         }
 
@@ -148,7 +147,7 @@ namespace UdemyRealWorldUnitTest.Web.Controllers
         {
             var product = _productsRepository.GetById(id).Result;
 
-            if(product==null) return false;
+            if (product == null) return false;
             return true;
         }
     }
