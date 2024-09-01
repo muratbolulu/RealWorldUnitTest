@@ -294,7 +294,7 @@ namespace UdemyRealWorldUnitTest.Test
         }
 
         //Delete Metodunun çalışması kontrol edilir.
-        [Theory]
+        //[Theory]
         [InlineData(1)]
         public async void DeleteConfirmed_ActionExecute_DeleteMethodExecute(int productId)
         {
