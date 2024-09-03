@@ -1,1 +1,8 @@
 ﻿Scaffold-DbContext "Data Source=MURATBOLULU;Initial Catalog=UdemyRealWorldUnitTest;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+
+//Database Provider Unit Test
+
+-Ef InMemory
+-SQLite InMemory *
+-SQL Server Express LocalDB (Express Advanced or the LocalDB package)
